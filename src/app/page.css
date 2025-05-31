@@ -22,6 +22,7 @@
 }
 
 .question-container {
+  position: relative; /* Added for absolute positioning of back button */
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -77,3 +78,33 @@
 .next-button:hover:enabled {
   background-color: #929495;
 }
+
+/* New styles for back button */
+
+.back-button {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background-color: #3b3e42;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  animation: fadeIn 2s forwards;
+  opacity: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.back-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.back-button:hover:enabled {
+  background-color: #929495;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+

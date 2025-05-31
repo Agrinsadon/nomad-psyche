@@ -25,6 +25,12 @@ export default function Home() {
     }
   };
 
+  const handleBack = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(currentQuestionIndex - 1);
+    }
+  };
+
   return (
       <div className="home">
         {!started ? (
@@ -32,28 +38,38 @@ export default function Home() {
               Get Started
             </button>
         ) : (
-            <div
-                key={currentQuestionIndex}  // triggers re-mount and fade-in animation
-                className="question-container"
-            >
-              <p className="question">{questions[currentQuestionIndex].question}</p>
-              <div className="input-container">
-                <input
-                    type="text"
-                    className="answer-input"
-                    value={answer}
-                    onChange={(e) => setAnswer(e.target.value)}
-                    placeholder="Type your answer..."
-                />
-                <button
-                    className="next-button"
-                    onClick={handleNext}
-                    disabled={answer.trim() === ""}
-                >
-                  Next
-                </button>
+            <>
+              <button
+                  className="back-button"
+                  onClick={handleBack}
+                  disabled={currentQuestionIndex === 0}
+              >
+                ←
+              </button>
+
+              <div
+                  key={currentQuestionIndex} // triggers re-mount and fade-in animation
+                  className="question-container"
+              >
+                <p className="question">{questions[currentQuestionIndex].question}</p>
+                <div className="input-container">
+                  <input
+                      type="text"
+                      className="answer-input"
+                      value={answer}
+                      onChange={(e) => setAnswer(e.target.value)}
+                      placeholder="Type your answer..."
+                  />
+                  <button
+                      className="next-button"
+                      onClick={handleNext}
+                      disabled={answer.trim() === ""}
+                  >
+                    Next
+                  </button>
+                </div>
               </div>
-            </div>
+            </>
         )}
       </div>
   );

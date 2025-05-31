@@ -5,28 +5,21 @@ import './OptionsSelector.css';
 interface OptionsSelectorProps {
     options: string[];
     selectedOption: string;
-    onSelect: (option: string) => void;
-    onNext: () => void;
+    onSelectAndNext: (option: string) => void;
 }
 
 const OptionsSelector: React.FC<OptionsSelectorProps> = ({
-     options,
-     selectedOption,
-     onSelect,
-     onNext
-    }) => {
-    const handleOptionClick = (option: string) => {
-        onSelect(option);
-        onNext();  // Trigger next question immediately
-    };
-
+                                                             options,
+                                                             selectedOption,
+                                                             onSelectAndNext
+                                                         }) => {
     return (
         <div className="options-container">
             {options.map((option, index) => (
                 <div
                     key={index}
                     className={`option ${selectedOption === option ? 'selected' : ''}`}
-                    onClick={() => handleOptionClick(option)}
+                    onClick={() => onSelectAndNext(option)}
                 >
                     {option}
                 </div>

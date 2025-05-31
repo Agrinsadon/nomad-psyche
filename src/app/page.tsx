@@ -20,9 +20,10 @@ export default function Home() {
     setStarted(true);
   };
 
-  const handleNext = () => {
-    if (answer.trim() === "") return;
-    console.log(`Answer to "${currentQuestion.question}": ${answer}`);
+  const handleNext = (selectedAnswer?: string) => {
+    const finalAnswer = selectedAnswer ?? answer;
+    if (finalAnswer.trim() === "") return;
+    console.log(`Answer to "${currentQuestion.question}": ${finalAnswer}`);
     setAnswer("");
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
@@ -37,6 +38,11 @@ export default function Home() {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
     }
+  };
+
+  const handleSelectAndNext = (option: string) => {
+    setAnswer(option);
+    handleNext(option);
   };
 
   return (
@@ -63,10 +69,8 @@ export default function Home() {
                         <OptionsSelector
                             options={currentQuestion.options}
                             selectedOption={answer}
-                            onSelect={setAnswer}
-                            onNext={handleNext}
+                            onSelectAndNext={handleSelectAndNext}
                         />
-                        {/* Hide the input and Next button here */}
                       </>
                   ) : (
                       <>
@@ -79,7 +83,7 @@ export default function Home() {
                         />
                         <button
                             className="next-button"
-                            onClick={handleNext}
+                            onClick={() => handleNext()}
                             disabled={answer.trim() === ""}
                         >
                           Next

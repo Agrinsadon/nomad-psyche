@@ -13,6 +13,7 @@ export default function Home() {
   };
 
   const handleNext = () => {
+    if (answer.trim() === "") return; // extra safety but now button is disabled
     console.log(`Answer to "${questions[currentQuestionIndex].question}": ${answer}`);
     setAnswer("");
     if (currentQuestionIndex < questions.length - 1) {
@@ -25,28 +26,35 @@ export default function Home() {
   };
 
   return (
-    <div className="home">
-      {!started ? (
-        <button className="get-started-button" onClick={handleStart}>
-          Get Started
-        </button>
-      ) : (
-        <div className="question-container">
-          <p className="question">{questions[currentQuestionIndex].question}</p>
-          <div className="input-container">
-            <input
-              type="text"
-              className="answer-input"
-              value={answer}
-              onChange={(e) => setAnswer(e.target.value)}
-              placeholder="Type your answer..."
-            />
-            <button className="next-button" onClick={handleNext}>
-              Next
+      <div className="home">
+        {!started ? (
+            <button className="get-started-button" onClick={handleStart}>
+              Get Started
             </button>
-          </div>
-        </div>
-      )}
-    </div>
+        ) : (
+            <div
+                key={currentQuestionIndex}  // triggers re-mount and fade-in animation
+                className="question-container"
+            >
+              <p className="question">{questions[currentQuestionIndex].question}</p>
+              <div className="input-container">
+                <input
+                    type="text"
+                    className="answer-input"
+                    value={answer}
+                    onChange={(e) => setAnswer(e.target.value)}
+                    placeholder="Type your answer..."
+                />
+                <button
+                    className="next-button"
+                    onClick={handleNext}
+                    disabled={answer.trim() === ""}
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+        )}
+      </div>
   );
 }

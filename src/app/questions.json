@@ -1,24 +1,379 @@
 [
-    {
-      "question": "Country of Birth?"
-    },
-    {
-      "question": "Gender?"
-    },
-    {
-      "question": "Qualification?"
-    },
-    {
-      "question": "Employment status?"
-    },
-    {
-      "question": "Working Experience?"
-    },
-    {
-      "question": "Organization that I am working has?"
-    },
-    {
-      "question": "Percentage of foreign workforce?"
-    }
-  ]
-  
+  {
+    "question": "Country of Birth?"
+  },
+  {
+    "question": "I have rarely had a strong person to give me sound advice or direction when I'm not sure what to do.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "Sometimes I am so worried about people leaving me that I drive them away.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I'm usually on the lookout for people's ulterior motives",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I always feel on the outside of groups.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I am too unacceptable in very basic ways to reveal myself to other people.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I'm not as intelligent as most people when it comes to work (or school).",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I feel that what I have to offer is of greater value than the contributions of others.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "For the most part, I have not had someone who really listens to me, understands me, or is tuned into my true needs and feelings.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "When I feel someone I care for pulling away from me, I get desperate",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I am quite suspicious of other people's motives.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I feel alienated from other people.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I feel that I'm not lovable.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I'm not as talented as most people are at their work.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I feel that I shouldn't have to follow the normal rules and conventions other people do.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "For much of my life, I haven't felt that I am special to someone.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I worry a lot that the people I love will find someone else they prefer and leave me.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "It is only a matter of time before someone betrays me.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I don't belong; I'm a loner",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I'm unworthy of the love, attention, and respect of others.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "Most other people are more capable than I am in areas of work (or school) and achievement",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I hate to be constrained or kept from doing what I want.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "In general, people have not been there to give me warmth, holding, and affection.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I need other people so much that I worry about losing them.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I feel that I cannot let my guard down in the presence of other people, or else they will intentionally hurt me.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I'm fundamentally different from other people",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "No one I desire would want to stay close to me if he/she knew the real me.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I'm incompetent when it comes to achievement",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I'm special and shouldn't have to accept many of the restrictions placed on other people",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "Most of the time, I haven't had someone to nurture me, share him/herself with me, or care deeply about everything that happens to me.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I find myself clinging to people I'm close to, because I'm afraid they'll leave me.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I feel that people will take advantage of me.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "No man/woman I desire could love me once he/she saw my defects.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "Almost nothing I do at work (or school) is as good as other people can do.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  },
+  {
+    "question": "I have a lot of trouble accepting \"no\" for an answer when I want something from other people.",
+    "options": [
+      "Completely untrue of me",
+      "Mostly untrue of me",
+      "Slightly more true than untrue",
+      "Moderately true of me",
+      "Mostly true of me",
+      "Describes me perfectly"
+    ]
+  }
+]

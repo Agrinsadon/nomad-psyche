@@ -1,6 +1,24 @@
 [
   {
-    "question": "Country of Birth?"
+    "question": "Enter your country of birth"
+  },
+  {
+    "question": "Specify your gender"
+  },
+  {
+    "question": "Enter your highest qualification"
+  },
+  {
+    "question": "Describe your current employment status"
+  },
+  {
+    "question": "Specify your years of working experience"
+  },
+  {
+    "question": "Enter the total number of workers in your organization"
+  },
+  {
+    "question": "Enter the percentage of foreign workforce in your company"
   },
   {
     "question": "I have rarely had a strong person to give me sound advice or direction when I'm not sure what to do.",

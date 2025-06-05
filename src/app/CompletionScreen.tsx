@@ -1,5 +1,6 @@
+"use client";
 import React, { useState, useEffect } from "react";
-import { Check } from 'lucide-react';
+import { Check } from "lucide-react";
 import "./CompletionScreen.css";
 
 const CompletionScreen: React.FC = () => {
@@ -9,12 +10,10 @@ const CompletionScreen: React.FC = () => {
   const fullText = "TThank you for your answers!";
 
   useEffect(() => {
-    // Step 1: Show the checkmark after 500ms
     const showTimeout = setTimeout(() => {
       setShowCheckmark(true);
     }, 500);
 
-    // Step 2: Start typing text after 1s
     const typeTimeout = setTimeout(() => {
       let i = 0;
       const typingInterval = setInterval(() => {
@@ -36,9 +35,9 @@ const CompletionScreen: React.FC = () => {
   return (
     <div className="completion-container">
       <span className="thank-you-text">{typedText}</span>
-      {showCheckmark && (
-        <Check className="checkmark" size={48} color="#000" />
-      )}
+      <div className={`checkmark ${showCheckmark ? "show" : ""}`}>
+        {showCheckmark && <Check size={48} />}
+      </div>
     </div>
   );
 };

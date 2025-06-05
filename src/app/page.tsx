@@ -61,7 +61,6 @@ export default function Home() {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
-      // All questions answered, save answers
       saveAnswers();
     }
   };
@@ -99,7 +98,7 @@ export default function Home() {
   };
 
   if (loading) return <Spinner />;
-  if (!questions.length) return <div>No questions found in the database.</div>;
+  if (!questions.length) return <Spinner />;
 
   return (
     <div className="home">

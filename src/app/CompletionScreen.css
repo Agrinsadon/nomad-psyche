@@ -1,5 +1,3 @@
-/* CompletionScreen.css */
-
 .completion-container {
     position: absolute;
     top: 50%;
@@ -10,7 +8,7 @@
     font-size: 1.5rem;
   }
 
-  .checkmark {
+.checkmark {
     position: relative;
     display: flex;
     align-items: center;
@@ -33,3 +31,12 @@
     margin-right: 0.3rem;
   }
   
+@media (max-width: 600px) {
+.completion-container {
+  font-size: 1.2rem;
+}
+
+.checkmark {
+  margin-bottom: 0.5rem;
+}
+}

@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
 }
 
 .get-started-button {
@@ -79,8 +78,6 @@
   background-color: #929495;
 }
 
-/* New styles for back button */
-
 .back-button {
   position: absolute;
   top: 1.5rem;
@@ -108,3 +105,32 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
+
+@media (max-width: 600px) {
+  .get-started-button {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+  
+  .question-container {
+    width: 85%;
+  }
+
+  .question {
+    font-size: 1.1rem;
+  }
+  
+  .answer-input {
+    font-size: 0.9rem;
+  }
+  
+  .next-button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.7rem;
+  }
+  .back-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}

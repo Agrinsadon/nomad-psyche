@@ -1,0 +1,35 @@
+/* CompletionScreen.css */
+
+.completion-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .checkmark {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: width 0.5s ease, height 0.5s ease, opacity 1s ease;
+    margin-bottom: 0.3rem;
+}
+  
+  
+  .checkmark.move-right {
+    margin-right: 20px;
+    transform: translateX(50px) rotate(45deg);
+    transition: transform 1s ease, margin-right 1s ease;
+  }
+  
+  .thank-you-text {
+    white-space: pre;
+    overflow: hidden;
+    margin-right: 0.3rem;
+  }
+  

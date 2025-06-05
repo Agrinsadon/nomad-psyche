@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import OptionsSelector from "./OptionsSelector";
 import Spinner from "./spinner";
+import CompletionScreen from "./CompletionScreen"; // Import new component
 import "./page.css";
 
 interface Question {
@@ -16,6 +17,7 @@ export default function Home() {
   const [answer, setAnswer] = useState<string>("");
   const [questions, setQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
+  const [completed, setCompleted] = useState(false);
 
   useEffect(() => {
     async function fetchQuestions() {
@@ -53,9 +55,9 @@ export default function Home() {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
-      alert("Thank you for completing the questions!");
       setStarted(false);
       setCurrentQuestionIndex(0);
+      setCompleted(true);
     }
   };
 
@@ -71,13 +73,13 @@ export default function Home() {
   };
 
   if (loading) return <Spinner />;
-
-  if (!questions.length)
-    return <div>No questions found in the database.</div>;
+  if (!questions.length) return <div>No questions found in the database.</div>;
 
   return (
     <div className="home">
-      {!started ? (
+      {completed ? (
+        <CompletionScreen />
+      ) : !started ? (
         <button className="get-started-button" onClick={handleStart}>
           Get Started
         </button>

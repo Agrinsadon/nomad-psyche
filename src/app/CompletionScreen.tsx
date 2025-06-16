@@ -3,11 +3,15 @@ import React, { useState, useEffect } from "react";
 import { Check } from "lucide-react";
 import "./CompletionScreen.css";
 
-const CompletionScreen: React.FC = () => {
+interface CompletionScreenProps {
+  resultCategory: string | null;
+}
+
+const CompletionScreen: React.FC<CompletionScreenProps> = ({ resultCategory }) => {
   const [showCheckmark, setShowCheckmark] = useState(false);
   const [typedText, setTypedText] = useState("");
 
-  const fullText = "TThank you for your answers!";
+  const fullText = "Thank you for your answers!";
 
   useEffect(() => {
     const showTimeout = setTimeout(() => {
@@ -38,6 +42,12 @@ const CompletionScreen: React.FC = () => {
       <div className={`checkmark ${showCheckmark ? "show" : ""}`}>
         {showCheckmark && <Check size={48} />}
       </div>
+
+      {resultCategory && (
+        <p className="result-category">
+          You seem to relate most with: <strong>{resultCategory}</strong>
+        </p>
+      )}
     </div>
   );
 };
